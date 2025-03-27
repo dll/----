@@ -61,21 +61,31 @@
 
 ### 3.1 系统架构
 1. 前端架构
-   - Web端：React + TypeScript
+   - Web端：Next.js 14 + TypeScript + Tailwind CSS
    - 移动端：Flutter
    - 桌面端：Electron
+   - 3D渲染：Three.js
+   - 动画效果：GSAP
 
 2. 后端架构
-   - 核心服务：Node.js + Express
-   - 数据库：MongoDB
-   - 缓存：Redis
+   - 核心服务：Node.js + Express + TypeScript
+   - AI服务：Python + FastAPI
+   - 数据库：PostgreSQL 16.0 + Redis 7.0 + Neo4j 5.0
    - 消息队列：RabbitMQ
+   - 搜索引擎：Elasticsearch
 
 3. 基础设施
-   - 容器化：Docker
-   - 编排：Kubernetes
-   - CI/CD：Jenkins
+   - 容器化：Docker + Kubernetes
+   - CI/CD：GitHub Actions
    - 监控：Prometheus + Grafana
+   - 日志：ELK Stack
+
+4. AI服务
+   - 自然语言处理：LangChain + Hugging Face
+   - 语音处理：Whisper + TTS
+   - 计算机视觉：OpenCV
+   - 知识图谱：Neo4j + NetworkX
+   - 机器学习：scikit-learn + PyTorch
 
 ### 3.2 功能架构
 1. 教学模块
@@ -83,18 +93,24 @@
    - 内容展示
    - 练习系统
    - 考试系统
+   - 知识图谱可视化
+   - 数字人教学助手
 
 2. 学习模块
    - 个人中心
    - 学习路径
    - 进度追踪
    - 成绩分析
+   - 知识地图
+   - 智能问答
 
 3. 互动模块
    - 在线答疑
    - 讨论区
    - 团队协作
    - 实时反馈
+   - 数字人互动
+   - 虚拟实验
 
 ## 四、核心功能模块规划
 
@@ -104,18 +120,24 @@
    - 个性化推荐
    - 实时进度跟踪
    - 智能答疑
+   - 知识图谱导航
+   - 数字人教学
 
 2. 实践环境
    - 在线IDE
    - 代码运行环境
    - 调试工具
    - 代码分析
+   - 3D可视化
+   - 虚拟实验室
 
 3. 评估系统
    - 自动评分
    - 代码质量分析
    - 学习效果评估
    - 成绩统计
+   - 知识掌握度分析
+   - 学习路径优化
 
 ### 4.2 管理核心功能
 1. 课程管理
@@ -123,60 +145,106 @@
    - 教学计划管理
    - 资源管理
    - 权限管理
+   - 知识图谱管理
+   - 数字人配置
 
 2. 数据分析
    - 学习行为分析
    - 成绩分析
    - 教学质量评估
    - 系统使用分析
+   - 知识关联分析
+   - 学习路径分析
 
 ## 五、技术路线确定与资源配置
 
 ### 5.1 技术选型
 1. 开发技术栈
-   - 前端：React + TypeScript + Ant Design
-   - 后端：Node.js + Express + TypeScript
-   - 数据库：MongoDB + Redis
-   - 消息队列：RabbitMQ
-   - 容器化：Docker + Kubernetes
+   - 前端框架：
+     * Next.js 14.0
+     * TypeScript 5.0
+     * Tailwind CSS 3.4
+     * Zustand 4.5（状态管理）
+     * React Query 5.0（数据获取）
+     * Socket.IO Client 4.7
+     * Three.js 0.160.0
+     * GSAP 3.12.0
+     * Shadcn UI（组件库）
+   
+   - 后端框架：
+     * Node.js 20 LTS
+     * Express 4.18
+     * TypeScript 5.0
+     * GraphQL
+     * WebSocket
+   
+   - AI服务（Python）：
+     * FastAPI（Web框架）
+     * LangChain（LLM应用开发）
+     * Hugging Face Transformers（开源模型）
+     * Sentence Transformers（文本向量化）
+     * spaCy（NLP处理）
+     * scikit-learn（机器学习）
+     * NetworkX（图计算）
+     * PyTorch（深度学习）
+     * OpenCV（计算机视觉）
+     * Whisper（语音识别）
+     * TTS（文本转语音）
+   
+   - 数据库：
+     * PostgreSQL 16.0（主数据库）
+     * Redis 7.0（缓存）
+     * Neo4j 5.0（知识图谱）
+     * Elasticsearch 8.0（搜索引擎）
+   
+   - 消息队列：
+     * RabbitMQ 3.12
+   
+   - 容器化与部署：
+     * Docker 24.0
+     * Kubernetes 1.28
+     * GitHub Actions（CI/CD）
 
 2. 开发工具
-   - IDE：VS Code
-   - 版本控制：Git
-   - 项目管理：Jira
-   - 文档管理：Confluence
+   - IDE：Cursor（主要开发工具）
+   - 版本控制：Git + GitHub
+   - 代码规范：ESLint + Prettier + Black + isort
+   - 测试框架：Jest + React Testing Library + pytest
+   - API测试：Postman
+   - 性能分析：Chrome DevTools
+   - 部署平台：Vercel + Docker
 
 ### 5.2 资源配置
 1. 人力资源
    - 项目经理：1人
-   - 前端开发：3人
-   - 后端开发：3人
+   - 前端开发：2人
+   - 后端开发：2人
+   - AI开发：1人
    - 测试工程师：1人
    - UI设计师：1人
    - 产品经理：1人
 
 2. 硬件资源
-   - 开发服务器：2台
+   - 开发服务器：1台
    - 测试服务器：1台
-   - 生产服务器：3台
+   - 生产服务器：2台
    - 存储设备：NAS
 
 3. 软件资源
    - 开发工具授权
    - 云服务资源
-   - 第三方服务集成
    - 安全防护软件
 
 ### 5.3 时间规划
 1. 开发周期
    - 需求分析：2周
    - 系统设计：2周
-   - 开发实现：8周
+   - 开发实现：10周
    - 测试优化：2周
    - 部署上线：2周
 
 2. 里程碑
    - 需求确认：第2周末
    - 架构设计：第4周末
-   - 核心功能：第12周末
-   - 系统上线：第16周末 
+   - 核心功能：第14周末
+   - 系统上线：第18周末 
